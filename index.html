@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+
+    <style>
+        header{
+            background-color: #fff;
+        }
+        #main-header .container img{
+            max-width: 130px;
+        }
+        #televendas{
+    
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 0%;
+            border-bottom-right-radius: 0%;
+            color: white;
+            background-color: #1b076d ;
+        }
+    
+        #ajuda, #minhas-viagens{
+            background-color: #dcdbdb;
+            border-radius: 0%;
+        }
+
+        #iniciar-sessao{
+            border-radius: 0%;
+            background-color: #dcdbdb;
+        }
+
+        ul.navbar-nav{
+            margin-left: 15%;
+        }
+
+        div.container.mt-3{
+            background-color: #1b076d;
+            border-radius: 10px;
+        
+        }
+
+        div.container{
+            padding: 15px;
+        }
+    
+        .custom-container {
+                padding: 20px;
+                border-radius: 10px;
+                color: #fff; /* Cor do texto */
+        }
+
+        button.btn{
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 18px;
+        }
+        button.btn:hover{
+            color: #1b076d;
+            background-color: #fff;
+        }
+
+        label {
+                color: #fff;
+            }
+
+        button.btn.btn-danger.search{
+            width: 200px;
+            }
+
+        .card > .img-promo {
+            height: 194.74px;
+        }
+
+        .card:hover{
+            cursor: pointer;
+        }
+
+        .accordion-item .accordion-header {
+            background-color: #1b076d;
+            padding: 10px; /* Adjust padding as needed */
+        }
+
+        .accordion-item .accordion-button {
+            background-color: #1b076d;
+            color: #fff;
+        }
+
+        #faq{
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="./images/decolar-logo.png" alt="">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+              </button>
+              <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills navbar-nav" >
+                    <li class="nav-item">
+                        <a href="#" class="nav-link p-3" id="televendas">
+                            <i class="fa-solid fa-headset"></i>
+                            Televendas 0800 883 6342
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link p-3" id="ajuda">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Ajuda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link p-3" id="minhas-viagens">
+                            <i class="fa-solid fa-suitcase"></i>
+                            Minhas Viagens
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link p-3" id="iniciar-sessao">
+                                <i class="fa-solid fa-circle-user"></i>
+                                Iniciar Sessão
+                        </a>
+                    </li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+        <div class="container container-submenu">
+            <nav class="navbar navbar-expand-lg justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center">
+                            <i class="fas fa-hotel"></i>
+                            <span class="small">Hospedagem</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center">
+                            <i class="fas fa-plane"></i> 
+                            <span class="small">Passagens</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center">
+                            <i class="fas fa-suitcase"></i>
+                            <span class="small">Pacotes</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center">
+                            <i class="fas fa-fire"></i>
+                            <span class="small">Hospedagem</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="small">Alugueis</span>
+                        </a>
+                    </li>
+                </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fas fa-credit-card fa-lg"></i>
+                            Cartão Decolar Santander
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="carousel-section">
+        <div class="carousel slide" id="carouselCities" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="./images/porto.png" alt="First City" class="d-block w-100">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/olinda.png" alt="First City" class="d-block w-100">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/sp.png" alt="First City" class="d-block w-100">
+                </div>
+                <a class="carousel-control-prev" href="#carouselCities" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselCities" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+        </div>
+    </section>
+    <section>
+    </section>
+    <section id="search-tickets-section">
+        <div class="container mt-3">
+            <div class="custom-container">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-2">
+                        <span class="mr-1 h4">Passagens aéreas</span>
+                    </div>
+                    <div class="col-md-10">
+                            <button type="button" class="btn  m-2">Ida e Volta</button>
+                            <button type="button" class="btn  m-2">Só Ida</button>
+                            <button type="button" class="btn m-2">Multidestino</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form" id="ticket-info">
+                <div class="row justify-content-center">
+                    <div class="form-group col-md-3">
+                        <label for="destination">Origem:</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Recife, Pernambuco, Brasil">
+                    </div> 
+                    <div class="form-group col-md-3">
+                            <label for="destination">Destino:</label>
+                            <input type="text" class="form-control" id="destination" placeholder="São Paulo, São Paulo, Brasil">
+                    </div> 
+                    <div class="form-group col-md-3">
+                        <label for="datas">Datas</label>
+                        <input type="date" class="form-control" id="datas">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="guests">Passageiros</label>
+                        <input type="number" class="form-control" id="guests" value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-11">
+                    <input type="checkbox" class="form-check-input" id="noDates">
+                    <label class="form-check-label" for="noDates">Ainda não defini as datas</label>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-11">
+                    <button type="button" class="btn btn-danger search"> <i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="promocoes">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                    <div class="card">
+                        <img  class="img-promo" src="./images/maceio.jpg" alt="Praia Maceio">
+                        <div class="card-body">
+                            <h4 class="card-title">Pacote para Maceio</h4>
+                            <span class="card-subtitle">A partir de <strong>Seg 07 Out</strong> Até <strong>Dom 13 Out</strong></span>
+                            <img src="./images/review-maceio.png" alt="">
+                            <p class="card-text">Economize <strong style="color: green;">R$166</strong></p>
+                            <p class="card-text h5">R$<strong>1.333</strong></p>
+                            <p class="card-text">Taxas e Impostos não inclusos</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                    <div class="card">
+                        <img  class="img-promo" src="./images/recife.jpg" alt="Vista Recife">
+                        <div class="card-body">
+                            <h4 class="card-title">Pacote para Recife</h4>
+                            <span class="card-subtitle">A partir de <strong>Sex 27 Set</strong> Até <strong>Ter 01 Out</strong></span>
+                            <img src="./images/review-recife.png" alt="">
+                            <p class="card-text">Economize <strong style="color: green;">R$126</strong></p>
+                            <p class="card-text h5">R$<strong>1.206</strong></p>
+                            <p class="card-text">Taxas e Impostos não inclusos</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                    <div class="card">
+                        <img  class="img-promo" src="./images/santiago.jpg" alt="Vista Santiago">
+                        <div class="card-body">
+                            <h4 class="card-title">Pacote para Santiago</h4>
+                            <span class="card-subtitle">A partir de <strong>Seg 07 Out</strong> Até <strong>Dom 13 Out</strong></span>
+                            <img src="./images/review-santiago.png" alt="">
+                            <p class="card-text"> <strong style="color: green;"><br></strong></p>
+                            <p class="card-text h5">R$<strong>1.221</strong></p>
+                            <p class="card-text">Taxas e Impostos não inclusos</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <p class="h4 mb-4">Perguntas Frequentes</p>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">FAQ #1</button>
+                    </div>
+                    <div class="accordion-collapse collapse show" id="resposta1">
+                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta excepturi qui dolor assumenda porro ratione odio, dolorem, exercitationem totam molestias cumque officia pariatur, delectus repellendus repellat inventore ad nobis.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">FAQ #2</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="resposta2">
+                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta excepturi qui dolor assumenda porro ratione odio, dolorem, exercitationem totam molestias cumque officia pariatur, delectus repellendus repellat inventore ad nobis.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta3">FAQ #3</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="resposta3">
+                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta excepturi qui dolor assumenda porro ratione odio, dolorem, exercitationem totam molestias cumque officia pariatur, delectus repellendus repellat inventore ad nobis.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta4">FAQ #4</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="resposta4">
+                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe dicta excepturi qui dolor assumenda porro ratione odio, dolorem, exercitationem totam molestias cumque officia pariatur, delectus repellendus repellat inventore ad nobis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c5a578beb.js" crossorigin="anonymous"></script>
+</body>
+</html>

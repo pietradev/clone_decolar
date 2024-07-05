@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-inner img {
+    height: 450px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire space */
+}
+
+header{
+    background-color: #fff;
+}
+#main-header .container img{
+    max-width: 130px;
+}
+#televendas{
+
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    color: white;
+    background-color: #1b076d ;
+}
+
+#ajuda, #minhas-viagens{
+    background-color: #dcdbdb;
+    border-radius: 0%;
+}
+
+#iniciar-sessao{
+    border-radius: 0%;
+    background-color: #dcdbdb;
+}
+
+ul.navbar-nav{
+    margin-left: 15%;
+}
+
+div.container.mt-3{
+    background-color: #1b076d;
+    border-radius: 10px;
+
+}
+
+div.container{
+    padding: 15px;
+}
+
+.custom-container {
+        padding: 20px;
+        border-radius: 10px;
+        color: #fff; /* Cor do texto */
+}
+
+button.btn{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 18px;
+}
+button.btn:hover{
+    color: #1b076d;
+    background-color: #fff;
+}
+
+label {
+        color: #fff;
+    }
+
+button.btn.btn-danger.search{
+    width: 200px;
+    }
+
+.card > .img-promo {
+    height: 194.74px;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.accordion-item .accordion-header {
+    background-color: #1b076d;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.accordion-item .accordion-button {
+    background-color: #1b076d;
+    color: #fff;
+}
+
+#faq{
+    margin-top: 80px;
+}
